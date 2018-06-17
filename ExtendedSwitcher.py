@@ -105,11 +105,13 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
                         ["Untitled" + current_view_prefix, ''])
 
         # Make the last item jump back
+        auto_select_next_tab = self.settings.get( 'auto_select_next_tab', True )
+
         if current_tab_index == 1:
-            current_tab_index += 0
+            current_tab_index += 0 if auto_select_next_tab else -1
 
         else:
-            current_tab_index -= 2
+            current_tab_index -= 2 if auto_select_next_tab else -1
 
         if self.check_for_sorting() == True:
             self.sort_files()
