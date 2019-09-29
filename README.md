@@ -13,6 +13,27 @@ Extended tab switcher for Sublime Text
 User can change the default key binding at `Preferences -> Package Settings -> Extended Tab Switcher -> Key Bindings User`
 
 
+## Installation
+
+### By Package Control
+
+1. Download & Install `Sublime Text 3` (https://www.sublimetext.com/3)
+1. Go to the menu `Tools -> Install Package Control`, then,
+   wait few seconds until the `Package Control` installation finishes
+1. Go to the menu `Preferences -> Package Control`
+1. Type `Package Control Add Channel` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, input the following address and press <kbd>Enter</kbd>
+   ```
+   https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
+   ```
+1. Now, go again to the menu `Preferences -> Package Control`
+1. This time type `Package Control Install Package` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, search for `ExtendedTabSwitcher` and press <kbd>Enter</kbd>
+
+See also:
+1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
+1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
+
 
 ## Configurations
 User can overwrite the following configurations by adding flags in the User - Settings section which can be access by `Preferences -> Package Settings -> Extended Tab Switcher -> Settings - User`
@@ -48,18 +69,18 @@ User can overwrite the following configurations by adding flags in the User - Se
 
 	```javascript
 	{
-		"mark_dirty_file_char": "<your-char>" 
+		"mark_dirty_file_char": "<your-char>"
 	}
 
 	```
 
-* Show full file path 
-	
+* Show full file path
+
 	By default the files listed will contain only the filename, This can be overwritten by adding the following flag in the settings
 
 	```javascript
 	{
-		"show_full_file_path": true 
+		"show_full_file_path": true
 	}
 
 	```
